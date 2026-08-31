@@ -12,4 +12,17 @@ logs/*.log
 reports/*.json
 reports/*.csv
 reports/*.png
+data/*.db
+data/raw/*
+data/processed/*
+data/parquet/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/parquet/.gitkeep
+models/*
+!models/.gitkeep
+logs/*
+!logs/.gitkeep
+reports/*
+!reports/.gitkeep
 .DS_Store
