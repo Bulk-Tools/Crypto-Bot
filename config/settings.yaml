@@ -1,0 +1,58 @@
+app:
+  name: crypto-bot
+  timezone: UTC
+  mode: paper
+  live_trading_enabled: false
+
+exchange:
+  id: binance
+  sandbox: false
+  timeout_ms: 10000
+  rate_limit: true
+
+symbols:
+  - BTC/USDT
+  - ETH/USDT
+  - SOL/USDT
+
+timeframes:
+  - 1m
+  - 5m
+  - 15m
+  - 1h
+  - 4h
+  - 1d
+
+data:
+  history_limit: 500
+  poll_seconds: 30
+
+costs:
+  maker_fee_bps: 10
+  taker_fee_bps: 10
+  spread_bps: 2
+  slippage_bps: 3
+  funding_bps_per_day: 1
+
+signal:
+  min_score: 60
+  min_expected_value: 0.0
+
+risk:
+  equity: 10000
+  max_risk_per_trade_pct: 1.0
+  max_position_notional_pct: 20.0
+  max_portfolio_exposure_pct: 60.0
+  max_daily_loss_pct: 3.0
+  max_consecutive_losses: 5
+  emergency_stop: false
+  atr_multiplier: 2.0
+  min_stop_pct: 0.2
+  max_stop_pct: 4.0
+
+notifications:
+  telegram_enabled: false
+
+retention:
+  max_raw_files: 1000
+  max_logs_days: 30

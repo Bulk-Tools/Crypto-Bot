@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crypto-bot"
+version = "0.1.0"
+description = "Modular crypto research, signal, backtest, and paper-trading platform"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name = "Crypto Bot Contributors"}]
+dependencies = []
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+addopts = "-q"
