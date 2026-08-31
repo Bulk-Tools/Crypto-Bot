@@ -1,0 +1,7 @@
+symbols:
+  BTC/USDT:
+    enabled: true
+  ETH/USDT:
+    enabled: true
+  SOL/USDT:
+    enabled: true
