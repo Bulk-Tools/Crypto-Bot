@@ -9,7 +9,7 @@ from .database import connect
 
 class SQLiteStore:
     def __init__(self, db_path: str | Path = "data/crypto_bot.db") -> None:
-        self.db_path = db_path
+        self.db_path = Path(db_path).expanduser().resolve()
 
     def upsert_candles(self, symbol: str, timeframe: str, frame: pd.DataFrame) -> int:
         if frame.empty:
