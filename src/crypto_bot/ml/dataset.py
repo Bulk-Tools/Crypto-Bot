@@ -1,6 +1,18 @@
 from __future__ import annotations
 
+from contextlib import contextmanager
+
 import pandas as pd
+from joblib import parallel_backend
+
+
+DEFAULT_N_JOBS = 1
+
+
+@contextmanager
+def threading_backend():
+    with parallel_backend("threading"):
+        yield
 
 
 def build_target(frame: pd.DataFrame, up_pct: float = 0.01, down_pct: float = 0.01, horizon: int = 12) -> pd.Series:

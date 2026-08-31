@@ -1,7 +1,14 @@
-ccxt>=4.4.0
-numpy>=1.26.0
-pandas>=2.2.0
-pyyaml>=6.0.1
-scikit-learn>=1.4.0
-pyarrow>=17.0.0
-requests>=2.32.0
+ccxt>=4.0.0
+pandas>=2.0.0
+numpy>=1.24.0
+scikit-learn>=1.3.0
+aiohttp>=3.9.0
+websockets>=12.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pytest>=8.0.0
+
+# Optional storage/performance dependencies (install manually when needed)
+# pyarrow>=17.0.0
+# fastparquet>=2024.5.0
+# xgboost>=2.1.0
